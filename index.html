@@ -244,8 +244,8 @@
               <div class="stat-label">Graduation</div>
             </div>
             <div class="stat-card">
-              <div class="stat-value">3+</div>
-              <div class="stat-label">Projects</div>
+              <div class="stat-value">6</div>
+              <div class="stat-label">Featured Projects</div>
             </div>
           </div>
         </div>
@@ -328,89 +328,224 @@
       <div class="section-container">
         <div class="section-label reveal-up"><i class="fa-solid fa-folder-open"></i> Portfolio</div>
         <h2 class="section-title reveal-up">Featured <span class="text-gradient">Projects</span></h2>
-        <p class="section-subtitle reveal-up">Practical applications and problem-solving concepts developed during my studies.</p>
+        <p class="section-subtitle reveal-up">Real projects built and maintained on my GitHub — verified from public repositories.</p>
 
-        <div class="projects-grid">
+        <!-- Project Filters -->
+        <div class="project-filters reveal-up" id="projectFilters" role="tablist" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all"    role="tab" aria-selected="true">All</button>
+          <button class="filter-btn"        data-filter="ai-ml"  role="tab" aria-selected="false">AI / ML</button>
+          <button class="filter-btn"        data-filter="web"    role="tab" aria-selected="false">Web Development</button>
+          <button class="filter-btn"        data-filter="java"   role="tab" aria-selected="false">Java</button>
+          <button class="filter-btn"        data-filter="python" role="tab" aria-selected="false">Python</button>
+          <button class="filter-btn"        data-filter="js"     role="tab" aria-selected="false">JavaScript</button>
+          <button class="filter-btn"        data-filter="oss"    role="tab" aria-selected="false">Open Source</button>
+        </div>
 
-          <!-- Project 1 -->
-          <article class="project-card reveal-up" data-tilt>
+        <!-- ---- FEATURED PROJECTS ---- -->
+        <div class="projects-subsection-label reveal-up">
+          <span><i class="fa-solid fa-star"></i> Featured Projects</span>
+        </div>
+
+        <div class="projects-grid" id="featuredGrid">
+
+          <!-- 01 CivicFix AI -->
+          <article class="project-card reveal-up" data-tilt data-category="ai-ml web js">
             <div class="project-card-inner">
               <div class="project-header">
-                <div class="project-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="project-icon project-icon-blue"><i class="fa-solid fa-city"></i></div>
                 <div class="project-num">01</div>
               </div>
-              <h3 class="project-title">ScamShield AI</h3>
+              <div class="project-category-badge badge-ai">AI / ML &bull; JavaScript</div>
+              <h3 class="project-title">CivicFix AI</h3>
               <p class="project-desc">
-                An intelligent multi-platform scam detection assistant designed to identify suspicious messages,
-                links, and scam patterns using AI/ML techniques.
+                An AI-powered civic issue reporting and resolution platform that helps citizens report public
+                problems, intelligently classify and prioritize issues, and track their resolution through a
+                connected admin dashboard.
               </p>
               <div class="project-techs">
-                <span>Python</span><span>NLP</span><span>Machine Learning</span><span>Scikit-learn</span>
+                <span>JavaScript</span><span>AI</span><span>Web App</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/pollasrujan0025" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-outline">
-                  <i class="fa-brands fa-github"></i> Code
+                <a href="https://github.com/pollasrujan0025/civicfix-ai" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-outline">
+                  <i class="fa-brands fa-github"></i> GitHub
                 </a>
-                <a href="#" class="proj-btn proj-btn-fill" title="Live Demo – Coming Soon">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                <a href="https://civicfix-ai-three.vercel.app" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-fill">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
                 </a>
               </div>
             </div>
           </article>
 
-          <!-- Project 2 -->
-          <article class="project-card reveal-up delay-1" data-tilt>
+          <!-- 02 SmartDukaan -->
+          <article class="project-card reveal-up delay-1" data-tilt data-category="ai-ml web js">
             <div class="project-card-inner">
               <div class="project-header">
-                <div class="project-icon accent-emerald"><i class="fa-solid fa-seedling"></i></div>
+                <div class="project-icon project-icon-emerald"><i class="fa-solid fa-store"></i></div>
                 <div class="project-num">02</div>
               </div>
-              <h3 class="project-title">Millets Value Chain Platform</h3>
+              <div class="project-category-badge badge-ai">AI / ML &bull; JavaScript</div>
+              <h3 class="project-title">SmartDukaan</h3>
               <p class="project-desc">
-                An AI-enabled platform concept designed to connect farmers, buyers, and stakeholders
-                in the millet value chain.
+                AI-powered Digital Business Assistant for small Indian shopkeepers.
               </p>
               <div class="project-techs">
-                <span>Python</span><span>AI Concept</span><span>Data Analytics</span><span>Web Platform</span>
+                <span>JavaScript</span><span>AI</span><span>Web App</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/pollasrujan0025" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-outline">
-                  <i class="fa-brands fa-github"></i> Code
+                <a href="https://github.com/pollasrujan0025/SmartDukaan" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-outline">
+                  <i class="fa-brands fa-github"></i> GitHub
                 </a>
-                <a href="#" class="proj-btn proj-btn-fill" title="Live Demo – Coming Soon">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                <a href="https://smart-dukaan-seven.vercel.app" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-fill">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
                 </a>
               </div>
             </div>
           </article>
 
-          <!-- Project 3 -->
-          <article class="project-card reveal-up delay-2" data-tilt>
+          <!-- 03 CropConnect -->
+          <article class="project-card reveal-up delay-2" data-tilt data-category="ai-ml python">
             <div class="project-card-inner">
               <div class="project-header">
-                <div class="project-icon accent-purple"><i class="fa-solid fa-satellite"></i></div>
+                <div class="project-icon project-icon-purple"><i class="fa-solid fa-seedling"></i></div>
                 <div class="project-num">03</div>
               </div>
-              <h3 class="project-title">AI Crop &amp; Moisture Stress Detection</h3>
+              <div class="project-category-badge badge-python">AI / ML &bull; Python</div>
+              <h3 class="project-title">CropConnect</h3>
               <p class="project-desc">
-                An AI and remote-sensing based solution concept for crop classification, moisture stress
-                detection, and irrigation advisory using multi-source satellite data.
+                AI Powered Millets Value Chain Platform using Flask.
               </p>
               <div class="project-techs">
-                <span>OpenCV</span><span>Remote Sensing</span><span>Machine Learning</span><span>Satellite Data</span>
+                <span>Python</span><span>Flask</span><span>AI</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/pollasrujan0025" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-outline">
-                  <i class="fa-brands fa-github"></i> Code
+                <a href="https://github.com/pollasrujan0025/CropConnect" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-outline">
+                  <i class="fa-brands fa-github"></i> GitHub
                 </a>
-                <a href="#" class="proj-btn proj-btn-fill" title="Live Demo – Coming Soon">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+              </div>
+            </div>
+          </article>
+
+          <!-- 04 StudySmart -->
+          <article class="project-card reveal-up delay-3" data-tilt data-category="web">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <div class="project-icon project-icon-amber"><i class="fa-solid fa-book-open"></i></div>
+                <div class="project-num">04</div>
+              </div>
+              <div class="project-category-badge badge-web">Web Development</div>
+              <h3 class="project-title">StudySmart</h3>
+              <p class="project-desc">
+                A web-based study and productivity tool. Repository contains programming and development work
+                focused on smart study techniques and learning workflows.
+              </p>
+              <div class="project-techs">
+                <span>Web</span><span>JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/pollasrujan0025/studysmart" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-outline">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 05 Mini Project Java -->
+          <article class="project-card reveal-up delay-4" data-tilt data-category="java">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <div class="project-icon project-icon-rose"><i class="fa-brands fa-java"></i></div>
+                <div class="project-num">05</div>
+              </div>
+              <div class="project-category-badge badge-java">Java</div>
+              <h3 class="project-title">Mini Project — Java</h3>
+              <p class="project-desc">
+                A Java mini-project developed as part of the NPTEL Programming in Java course (Jan–Apr 2026).
+                Repository contains Java programming and development work.
+              </p>
+              <div class="project-techs">
+                <span>Java</span><span>OOP</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/pollasrujan0025/mini-project-java" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-outline">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 06 CodeAlpha Tasks -->
+          <article class="project-card reveal-up delay-5" data-tilt data-category="python ai-ml">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <div class="project-icon project-icon-blue"><i class="fa-brands fa-python"></i></div>
+                <div class="project-num">06</div>
+              </div>
+              <div class="project-category-badge badge-python">Python &bull; AI / ML</div>
+              <h3 class="project-title">CodeAlpha Tasks</h3>
+              <p class="project-desc">
+                Repository containing Python-based programming tasks completed during the CodeAlpha internship program.
+                Focused on data science and artificial intelligence work.
+              </p>
+              <div class="project-techs">
+                <span>Python</span><span>Data Science</span><span>AI</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/pollasrujan0025/CodeAlpha_tasks" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-outline">
+                  <i class="fa-brands fa-github"></i> GitHub
                 </a>
               </div>
             </div>
           </article>
 
         </div>
+
+        <!-- ---- OTHER WORK / CONTRIBUTIONS ---- -->
+        <div class="projects-subsection-label reveal-up" style="margin-top: 3rem;">
+          <span><i class="fa-solid fa-code-branch"></i> Other Work &amp; Contributions</span>
+        </div>
+
+        <div class="other-projects-grid reveal-up" id="otherGrid">
+
+          <!-- Portfolio -->
+          <article class="other-project-card" data-category="web">
+            <div class="other-card-icon"><i class="fa-solid fa-globe"></i></div>
+            <div class="other-card-body">
+              <div class="other-card-title">polla-srujan-portfolio</div>
+              <div class="other-card-desc">This personal portfolio website — built with HTML, CSS, and JavaScript.</div>
+              <div class="other-card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+            <a href="https://github.com/pollasrujan0025/polla-srujan-portfolio" target="_blank" rel="noopener noreferrer" class="other-card-link" aria-label="View portfolio on GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </article>
+
+          <!-- First Contribution (fork) -->
+          <article class="other-project-card" data-category="oss">
+            <div class="other-card-icon other-card-icon-oss"><i class="fa-solid fa-code-branch"></i></div>
+            <div class="other-card-body">
+              <div class="other-card-title">
+                first-contribution
+                <span class="fork-badge"><i class="fa-solid fa-code-fork"></i> Fork</span>
+              </div>
+              <div class="other-card-desc">Open-source contribution practice — forked repository from the first-contributions project.</div>
+              <div class="other-card-tags"><span>Open Source</span><span>Contribution</span></div>
+            </div>
+            <a href="https://github.com/pollasrujan0025/first-contribution" target="_blank" rel="noopener noreferrer" class="other-card-link" aria-label="View first-contribution fork on GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </article>
+
+        </div>
+
+        <!-- ---- GitHub CTA ---- -->
+        <div class="projects-github-cta reveal-up">
+          <a href="https://github.com/pollasrujan0025" target="_blank" rel="noopener noreferrer" class="btn-secondary github-cta-btn">
+            <i class="fa-brands fa-github"></i>
+            View All Projects on GitHub
+            <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.75rem;"></i>
+          </a>
+        </div>
+
       </div>
     </section>
 

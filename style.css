@@ -1304,6 +1304,213 @@ footer { position: relative; z-index: 2; }
 }
 
 /* ============================================================
+   PROJECT FILTERS
+   ============================================================ */
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: var(--sp-xl);
+}
+
+.filter-btn {
+  padding: 0.45rem 1.1rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: var(--font-main);
+  color: var(--col-text-muted);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--col-border);
+  border-radius: var(--r-full);
+  cursor: pointer;
+  transition: color var(--tr-fast), background var(--tr-fast), border-color var(--tr-fast), box-shadow var(--tr-fast);
+  white-space: nowrap;
+}
+.filter-btn:hover {
+  color: var(--col-text);
+  border-color: rgba(79,163,224,0.4);
+  background: rgba(79,163,224,0.08);
+}
+.filter-btn.active {
+  color: #fff;
+  background: var(--grad-primary);
+  border-color: transparent;
+  box-shadow: 0 4px 18px rgba(79,163,224,0.3);
+}
+
+/* ============================================================
+   PROJECT SUBSECTION LABELS
+   ============================================================ */
+.projects-subsection-label {
+  margin-bottom: var(--sp-lg);
+}
+.projects-subsection-label span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--col-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding-bottom: 0.6rem;
+  border-bottom: 1.5px solid var(--col-border);
+}
+.projects-subsection-label i { color: var(--col-blue); }
+
+/* ============================================================
+   PROJECT CATEGORY BADGES (inside cards)
+   ============================================================ */
+.project-category-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.22rem 0.7rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-radius: var(--r-full);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.55rem;
+}
+.badge-ai     { color: var(--col-blue);    background: rgba(79,163,224,0.12);  border: 1px solid rgba(79,163,224,0.25); }
+.badge-python { color: var(--col-emerald); background: rgba(52,211,153,0.1);   border: 1px solid rgba(52,211,153,0.25); }
+.badge-web    { color: var(--col-purple);  background: rgba(167,139,250,0.1);  border: 1px solid rgba(167,139,250,0.25); }
+.badge-java   { color: var(--col-amber);   background: rgba(251,191,36,0.1);   border: 1px solid rgba(251,191,36,0.25); }
+.badge-oss    { color: var(--col-rose);    background: rgba(244,114,182,0.1);  border: 1px solid rgba(244,114,182,0.25); }
+
+/* ============================================================
+   PROJECT ICON COLOR VARIANTS
+   ============================================================ */
+.project-icon-blue   { background: rgba(79,163,224,0.15);  color: var(--col-blue); }
+.project-icon-emerald{ background: rgba(52,211,153,0.15);  color: var(--col-emerald); }
+.project-icon-purple { background: rgba(167,139,250,0.15); color: var(--col-purple); }
+.project-icon-amber  { background: rgba(251,191,36,0.15);  color: var(--col-amber); }
+.project-icon-rose   { background: rgba(244,114,182,0.15); color: var(--col-rose); }
+
+/* Hidden cards (filtered out) */
+.project-card.hidden,
+.other-project-card.hidden {
+  display: none;
+}
+
+/* ============================================================
+   OTHER PROJECTS GRID (small row cards)
+   ============================================================ */
+.other-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--sp-md);
+  margin-bottom: var(--sp-xl);
+}
+
+.other-project-card {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-md);
+  background: linear-gradient(135deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.02) 100%);
+  border: 1px solid var(--col-border);
+  border-radius: var(--r-md);
+  padding: var(--sp-md) var(--sp-lg);
+  transition: border-color var(--tr-med), transform var(--tr-med), box-shadow var(--tr-med);
+}
+.other-project-card:hover {
+  border-color: var(--col-border-hov);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.25);
+}
+
+.other-card-icon {
+  width: 44px; height: 44px;
+  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(79,163,224,0.12);
+  color: var(--col-blue);
+  border-radius: var(--r-sm);
+  font-size: 1.1rem;
+}
+.other-card-icon-oss { background: rgba(244,114,182,0.12); color: var(--col-rose); }
+
+.other-card-body { flex: 1; min-width: 0; }
+
+.other-card-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--col-text);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 3px;
+  font-family: var(--font-mono);
+}
+.other-card-desc {
+  font-size: 0.8rem;
+  color: var(--col-text-muted);
+  margin-bottom: 6px;
+  line-height: 1.55;
+}
+.other-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.other-card-tags span {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--r-full);
+  color: var(--col-blue-light);
+  background: rgba(79,163,224,0.1);
+}
+
+.fork-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--col-rose);
+  background: rgba(244,114,182,0.1);
+  border: 1px solid rgba(244,114,182,0.25);
+  border-radius: var(--r-full);
+  padding: 0.15rem 0.55rem;
+  font-family: var(--font-main);
+}
+
+.other-card-link {
+  flex-shrink: 0;
+  width: 38px; height: 38px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem;
+  color: var(--col-text-muted);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--col-border);
+  border-radius: var(--r-sm);
+  transition: color var(--tr-fast), background var(--tr-fast), border-color var(--tr-fast);
+}
+.other-card-link:hover {
+  color: var(--col-text);
+  background: rgba(79,163,224,0.1);
+  border-color: rgba(79,163,224,0.4);
+}
+
+/* ============================================================
+   GITHUB CTA
+   ============================================================ */
+.projects-github-cta {
+  text-align: center;
+  padding-top: var(--sp-lg);
+}
+
+.github-cta-btn {
+  font-size: 1rem;
+  padding: 0.9rem 2.2rem;
+  gap: 0.65rem;
+}
+.github-cta-btn:hover {
+  box-shadow: 0 8px 32px rgba(79,163,224,0.25);
+}
+
+/* ============================================================
    REDUCED MOTION
    ============================================================ */
 @media (prefers-reduced-motion: reduce) {

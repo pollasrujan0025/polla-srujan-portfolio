@@ -334,3 +334,51 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     }
   });
 });
+
+
+// ============================================================
+// 11. PROJECT FILTERS
+// ============================================================
+(function initProjectFilters() {
+  const filterContainer = document.getElementById('projectFilters');
+  if (!filterContainer) return;
+
+  const featuredCards = document.querySelectorAll('#featuredGrid .project-card');
+  const otherCards    = document.querySelectorAll('#otherGrid .other-project-card');
+
+  filterContainer.addEventListener('click', e => {
+    const btn = e.target.closest('.filter-btn');
+    if (!btn) return;
+
+    const filter = btn.dataset.filter;
+
+    // Update active state + ARIA
+    filterContainer.querySelectorAll('.filter-btn').forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-selected', 'false');
+    });
+    btn.classList.add('active');
+    btn.setAttribute('aria-selected', 'true');
+
+    // Filter featured cards
+    featuredCards.forEach(card => {
+      if (filter === 'all') {
+        card.classList.remove('hidden');
+        return;
+      }
+      const cats = (card.dataset.category || '').split(' ');
+      card.classList.toggle('hidden', !cats.includes(filter));
+    });
+
+    // Filter other-work cards
+    otherCards.forEach(card => {
+      if (filter === 'all' || filter === 'oss') {
+        card.classList.remove('hidden');
+        return;
+      }
+      // Hide other-work cards when filtering by a specific non-oss category
+      card.classList.add('hidden');
+    });
+  });
+})();
+
