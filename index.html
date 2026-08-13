@@ -3,42 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
   <!-- SEO Primary Meta Tags -->
   <title>Polla Srujan Kumar | AI Engineer Portfolio</title>
   <meta name="title" content="Polla Srujan Kumar | AI Engineer Portfolio" />
-  <meta name="description" content="Polla Srujan Kumar, B.Tech Artificial Intelligence and Data Science student and aspiring AI Engineer, building projects in Artificial Intelligence, Machine Learning and Data Science." />
-  <meta name="keywords" content="Polla Srujan Kumar, AI Engineer, Artificial Intelligence, Machine Learning, Data Science, B.Tech Student, Portfolio, ScamShield AI, Crop Moisture Detection" />
+  <meta name="description" content="Polla Srujan Kumar is a B.Tech Artificial Intelligence and Data Science student aspiring to become an AI Engineer, passionate about Artificial Intelligence, Machine Learning and Data Science." />
+  <meta name="keywords" content="Polla Srujan Kumar, AI Engineer, Artificial Intelligence, Machine Learning, Data Science, B.Tech Student, Portfolio, ScamShield AI" />
   <meta name="author" content="Polla Srujan Kumar" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://pollasrujankumar.com/" />
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://pollasrujankumar.com/" />
   <meta property="og:title" content="Polla Srujan Kumar | AI Engineer Portfolio" />
-  <meta property="og:description" content="Polla Srujan Kumar, B.Tech Artificial Intelligence and Data Science student and aspiring AI Engineer, building projects in Artificial Intelligence, Machine Learning and Data Science." />
+  <meta property="og:description" content="Polla Srujan Kumar is a B.Tech Artificial Intelligence and Data Science student aspiring to become an AI Engineer, passionate about Artificial Intelligence, Machine Learning and Data Science." />
   <meta property="og:image" content="assets/profile.jpg" />
 
-  <!-- Twitter Meta Tags -->
+  <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://pollasrujankumar.com/" />
   <meta property="twitter:title" content="Polla Srujan Kumar | AI Engineer Portfolio" />
-  <meta property="twitter:description" content="Polla Srujan Kumar, B.Tech Artificial Intelligence and Data Science student and aspiring AI Engineer, building projects in Artificial Intelligence, Machine Learning and Data Science." />
+  <meta property="twitter:description" content="Polla Srujan Kumar is a B.Tech Artificial Intelligence and Data Science student aspiring to become an AI Engineer." />
   <meta property="twitter:image" content="assets/profile.jpg" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
-  <!-- Font Awesome 6 Icons CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- JSON-LD Structured Data Schema -->
+  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -48,7 +46,7 @@
         "@id": "https://pollasrujankumar.com/#person",
         "name": "Polla Srujan Kumar",
         "jobTitle": "AI Engineer in the Making",
-        "description": "Polla Srujan Kumar, B.Tech Artificial Intelligence and Data Science student and aspiring AI Engineer, building projects in Artificial Intelligence, Machine Learning and Data Science.",
+        "description": "Polla Srujan Kumar is a B.Tech Artificial Intelligence and Data Science student aspiring to become an AI Engineer, passionate about Artificial Intelligence, Machine Learning and Data Science.",
         "image": "assets/profile.jpg",
         "url": "https://pollasrujankumar.com/",
         "email": "mailto:pollasrujan0025@gmail.com",
@@ -66,9 +64,7 @@
         "@id": "https://pollasrujankumar.com/#webpage",
         "url": "https://pollasrujankumar.com/",
         "name": "Polla Srujan Kumar | AI Engineer Portfolio",
-        "mainEntity": {
-          "@id": "https://pollasrujankumar.com/#person"
-        }
+        "mainEntity": { "@id": "https://pollasrujankumar.com/#person" }
       }
     ]
   }
@@ -76,695 +72,654 @@
 </head>
 <body>
 
-  <!-- ==========================================
-       HEADER & NAVIGATION
-       ========================================== -->
-  <header class="header">
-    <div class="container nav-container">
-      <a href="#hero" class="logo" aria-label="Polla Srujan Kumar Homepage">
-        <div class="logo-icon"><i class="fa-solid fa-brain"></i></div>
-        <span>Srujan<span class="text-gradient">.AI</span></span>
+  <!-- Neural Network Canvas Background -->
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Polla Srujan Kumar Portfolio">
+        <span class="logo-bracket">&lt;</span>Srujan<span class="logo-dot">.AI</span><span class="logo-bracket">/&gt;</span>
       </a>
 
       <nav aria-label="Main Navigation">
-        <ul class="nav-links">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about"    class="nav-link">About</a></li>
+          <li><a href="#skills"   class="nav-link">Skills</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#education" class="nav-link">Education</a></li>
           <li><a href="#certifications" class="nav-link">Certifications</a></li>
-          <li><a href="#journey" class="nav-link">Journey</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-          <li><a href="assets/resume.pdf" download="Polla-Srujan-Kumar-Resume.pdf" class="btn btn-outline" style="padding: 0.4rem 0.9rem; font-size: 0.85rem;"><i class="fa-solid fa-file-arrow-down"></i> Resume</a></li>
+          <li><a href="#journey"  class="nav-link">Journey</a></li>
+          <li><a href="#contact"  class="nav-link">Contact</a></li>
+          <li>
+            <a href="assets/resume.pdf" download="Polla-Srujan-Kumar-Resume.pdf" class="nav-resume-btn">
+              <i class="fa-solid fa-file-arrow-down"></i> Resume
+            </a>
+          </li>
         </ul>
       </nav>
 
-      <button class="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
-        <i class="fa-solid fa-bars"></i>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
   <main>
-    <!-- ==========================================
+    <!-- ============================================================
          1. HERO SECTION
-         ========================================== -->
+         ============================================================ -->
     <section id="hero" class="hero-section">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="hero-status-tag">
-            <span class="pulse-dot"></span>
-            <span>2nd Year B.Tech Student • Graduating 2029</span>
+      <div class="hero-container">
+
+        <!-- Left Content -->
+        <div class="hero-content" id="heroContent">
+          <div class="hero-badge reveal-up">
+            <span class="badge-dot"></span>
+            2nd Year B.Tech Student &bull; Graduating 2029
           </div>
 
-          <h1 class="hero-name">Polla Srujan Kumar</h1>
-          <h2 class="hero-headline text-gradient">AI Engineer in the Making</h2>
+          <h1 class="hero-name reveal-up delay-1">Polla Srujan Kumar</h1>
 
-          <p class="hero-desc">
-            B.Tech Artificial Intelligence and Data Science student passionate about Artificial Intelligence, Machine Learning, Data Science, and building real-world intelligent solutions.
+          <div class="hero-headline reveal-up delay-2">
+            <span class="headline-text">AI Engineer in the Making</span>
+            <span class="headline-cursor">|</span>
+          </div>
+
+          <p class="hero-desc reveal-up delay-3">
+            B.Tech Artificial Intelligence and Data Science student passionate about
+            Artificial Intelligence, Machine Learning, Data Science, and building
+            real-world intelligent solutions.
           </p>
 
-          <div class="hero-ctas">
-            <a href="#projects" class="btn btn-primary">
+          <div class="hero-ctas reveal-up delay-4">
+            <a href="#projects" class="btn-primary">
               <i class="fa-solid fa-rocket"></i> View My Projects
             </a>
-            <a href="assets/resume.pdf" download="Polla-Srujan-Kumar-Resume.pdf" class="btn btn-outline">
+            <a href="assets/resume.pdf" download="Polla-Srujan-Kumar-Resume.pdf" class="btn-secondary">
               <i class="fa-solid fa-file-arrow-down"></i> Download Resume
             </a>
-            <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i> View Resume
-            </a>
-            <a href="#contact" class="btn btn-outline">
+            <a href="#contact" class="btn-ghost">
               <i class="fa-solid fa-paper-plane"></i> Contact Me
             </a>
           </div>
 
-          <div class="hero-social-links" style="display: flex; gap: 0.85rem; margin-top: 1.5rem;">
-            <a href="https://www.linkedin.com/in/polla-srujan-kumar-568b89382" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+          <div class="hero-socials reveal-up delay-5">
+            <a href="https://www.linkedin.com/in/polla-srujan-kumar-568b89382" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/pollasrujan0025" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile" title="GitHub Profile">
+            <a href="https://github.com/pollasrujan0025" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
               <i class="fa-brands fa-github"></i>
             </a>
-            <a href="mailto:pollasrujan0025@gmail.com" class="social-icon" aria-label="Send Email" title="Send Email">
+            <a href="mailto:pollasrujan0025@gmail.com" class="social-btn" aria-label="Email">
               <i class="fa-solid fa-envelope"></i>
             </a>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <div class="profile-card-wrapper">
-            <div class="profile-img-container">
-              <img src="assets/profile.jpg" alt="Polla Srujan Kumar - AI Engineer">
-            </div>
-            <div class="floating-badge">
-              <div class="badge-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-              <div class="badge-text">
-                <h4>AI &amp; Data Science</h4>
-                <p>B.Tech Student (2025–2029)</p>
+        <!-- Right: Profile Card -->
+        <div class="hero-visual reveal-right" id="heroVisual">
+          <div class="profile-3d-wrapper" id="profileCard">
+            <div class="profile-3d-inner">
+              <div class="profile-img-ring">
+                <img src="assets/profile.jpg" alt="Polla Srujan Kumar - AI Engineer" class="profile-img" />
               </div>
+              <div class="profile-info-chip">
+                <div class="chip-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div>
+                  <div class="chip-title">AI &amp; Data Science</div>
+                  <div class="chip-sub">B.Tech Student (2025–2029)</div>
+                </div>
+              </div>
+              <!-- Decorative dots -->
+              <div class="deco-dot deco-dot-1"></div>
+              <div class="deco-dot deco-dot-2"></div>
+              <div class="deco-ring"></div>
             </div>
           </div>
         </div>
+
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
       </div>
     </section>
 
-    <!-- ==========================================
-         2. ABOUT ME SECTION
-         ========================================== -->
-    <section id="about" class="about-section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-badge"><i class="fa-solid fa-user"></i> Introduction</span>
-          <h2 class="section-title">About Me</h2>
-          <p class="section-desc">Building strong foundations in artificial intelligence to address real-world challenges.</p>
-        </div>
+    <!-- ============================================================
+         2. ABOUT SECTION
+         ============================================================ -->
+    <section id="about" class="section">
+      <div class="section-container">
+        <div class="section-label reveal-up"><i class="fa-solid fa-user"></i> Introduction</div>
+        <h2 class="section-title reveal-up">Hello! I'm <span class="text-gradient">Srujan</span></h2>
 
         <div class="about-grid">
-          <div class="about-text glass-card reveal" style="padding: 2rem;">
+          <div class="about-text reveal-up">
             <p>
-              Hello! I am <strong>Polla Srujan Kumar</strong>, currently a 2nd-year B.Tech student pursuing <strong>Artificial Intelligence and Data Science</strong> with expected graduation in <strong>2029</strong>.
+              I'm <strong>Polla Srujan Kumar</strong>, a 2nd-year undergraduate pursuing
+              <strong>B.Tech in Artificial Intelligence and Data Science</strong> with a clear goal —
+              to become a skilled AI Engineer by 2029.
             </p>
             <p>
-              My goal is to become a well-rounded <strong>AI Engineer</strong>. I focus on bridging theoretical concepts in machine learning, mathematics, and data analytics with practical software engineering to construct impactful tools.
+              My passion lies at the intersection of <strong>Artificial Intelligence, Machine Learning,
+              and Data Science</strong>. I believe in learning by building — every project I work on
+              teaches me something that no classroom alone can.
             </p>
             <p>
-              Whether it's building multi-platform scam detection mechanisms or developing remote-sensing crop intelligence concepts, I am dedicated to solving practical problems with data and intelligent algorithms.
+              Whether it's designing AI-powered scam detection systems, exploring satellite-based crop
+              intelligence, or contributing to platform concepts that connect real communities — I focus on
+              <strong>practical, real-world problem solving</strong> with data and intelligent algorithms.
             </p>
 
-            <div class="highlights-box">
-              <div class="stat-item">
-                <div class="stat-number">2nd Year</div>
-                <div class="stat-label">Undergraduate Student</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-number">2029</div>
-                <div class="stat-label">Target Graduation</div>
-              </div>
+            <div class="about-interests">
+              <span class="tag">Artificial Intelligence</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Data Science</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Generative AI</span>
+              <span class="tag">Problem Solving</span>
             </div>
           </div>
 
-          <div class="interests-container glass-card reveal" style="padding: 2rem;">
-            <h3 class="interests-title"><i class="fa-solid fa-compass text-gradient"></i> Core Areas of Interest</h3>
-            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.25rem;">
-              Key domain focus areas I am actively learning and building projects around:
-            </p>
-
-            <div class="interest-tags">
-              <span class="interest-tag"><i class="fa-solid fa-brain"></i> Artificial Intelligence</span>
-              <span class="interest-tag"><i class="fa-solid fa-robot"></i> Machine Learning</span>
-              <span class="interest-tag"><i class="fa-solid fa-chart-line"></i> Data Science</span>
-              <span class="interest-tag"><i class="fa-solid fa-eye"></i> Computer Vision</span>
-              <span class="interest-tag"><i class="fa-solid fa-comments"></i> Natural Language Processing</span>
-              <span class="interest-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Generative AI</span>
-              <span class="interest-tag"><i class="fa-solid fa-code"></i> Problem Solving</span>
+          <div class="stats-grid reveal-right">
+            <div class="stat-card">
+              <div class="stat-value">2nd</div>
+              <div class="stat-label">Year Student</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">AI&amp;DS</div>
+              <div class="stat-label">B.Tech Branch</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">2029</div>
+              <div class="stat-label">Graduation</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">3+</div>
+              <div class="stat-label">Projects</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==========================================
-         3. AI ENGINEERING SKILLS SECTION
-         ========================================== -->
-    <section id="skills" class="skills-section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-badge"><i class="fa-solid fa-microchip"></i> Technical Stack</span>
-          <h2 class="section-title">AI Engineering Skills</h2>
-          <p class="section-desc">Technologies and tools I work with across software development and data science.</p>
-        </div>
+    <!-- ============================================================
+         3. SKILLS SECTION
+         ============================================================ -->
+    <section id="skills" class="section section-alt">
+      <div class="section-container">
+        <div class="section-label reveal-up"><i class="fa-solid fa-microchip"></i> Tech Stack</div>
+        <h2 class="section-title reveal-up">AI Engineering <span class="text-gradient">Skills</span></h2>
+        <p class="section-subtitle reveal-up">Technologies and tools I work with across software development and data science.</p>
 
         <div class="skills-grid">
-          <!-- Programming -->
-          <div class="skill-card glass-card reveal">
-            <div class="skill-category-header">
-              <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
-              <h3 class="skill-category-title">Programming</h3>
+
+          <div class="skill-category-card reveal-up">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-code"></i></div>
+              <h3>Programming</h3>
             </div>
             <div class="skill-pills">
-              <span class="skill-pill">Python</span>
-              <span class="skill-pill">Java</span>
-              <span class="skill-pill">SQL</span>
-              <span class="skill-pill">C</span>
+              <span class="pill"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="pill">Java</span>
+              <span class="pill">C</span>
+              <span class="pill"><i class="fa-solid fa-database"></i> SQL</span>
             </div>
           </div>
 
-          <!-- AI / ML -->
-          <div class="skill-card glass-card reveal">
-            <div class="skill-category-header">
-              <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
-              <h3 class="skill-category-title">AI / Machine Learning</h3>
+          <div class="skill-category-card reveal-up delay-1">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon accent-purple"><i class="fa-solid fa-brain"></i></div>
+              <h3>AI / Machine Learning</h3>
             </div>
             <div class="skill-pills">
-              <span class="skill-pill">Machine Learning</span>
-              <span class="skill-pill">Artificial Intelligence</span>
-              <span class="skill-pill">Scikit-learn</span>
-              <span class="skill-pill">Pandas</span>
-              <span class="skill-pill">NumPy</span>
-              <span class="skill-pill">OpenCV</span>
+              <span class="pill">Machine Learning</span>
+              <span class="pill">Artificial Intelligence</span>
+              <span class="pill">Scikit-learn</span>
+              <span class="pill">OpenCV</span>
             </div>
           </div>
 
-          <!-- Data Science -->
-          <div class="skill-card glass-card reveal">
-            <div class="skill-category-header">
-              <div class="skill-icon"><i class="fa-solid fa-chart-pie"></i></div>
-              <h3 class="skill-category-title">Data Science</h3>
+          <div class="skill-category-card reveal-up delay-2">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon accent-emerald"><i class="fa-solid fa-chart-line"></i></div>
+              <h3>Data Science</h3>
             </div>
             <div class="skill-pills">
-              <span class="skill-pill">Data Analysis</span>
-              <span class="skill-pill">Data Visualization</span>
-              <span class="skill-pill">Statistics</span>
-              <span class="skill-pill">Data Preprocessing</span>
+              <span class="pill">NumPy</span>
+              <span class="pill">Pandas</span>
+              <span class="pill">Statistics</span>
+              <span class="pill">Data Analysis</span>
+              <span class="pill">Data Visualization</span>
             </div>
           </div>
 
-          <!-- Development -->
-          <div class="skill-card glass-card reveal">
-            <div class="skill-category-header">
-              <div class="skill-icon"><i class="fa-solid fa-laptop-code"></i></div>
-              <h3 class="skill-category-title">Development &amp; Tools</h3>
+          <div class="skill-category-card reveal-up delay-3">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon accent-amber"><i class="fa-solid fa-laptop-code"></i></div>
+              <h3>Development &amp; Tools</h3>
             </div>
             <div class="skill-pills">
-              <span class="skill-pill">HTML</span>
-              <span class="skill-pill">CSS</span>
-              <span class="skill-pill">JavaScript</span>
-              <span class="skill-pill">Git</span>
-              <span class="skill-pill">GitHub</span>
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill"><i class="fa-brands fa-git-alt"></i> Git</span>
+              <span class="pill"><i class="fa-brands fa-github"></i> GitHub</span>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- ==========================================
-         4. PROJECTS SHOWCASE
-         ========================================== -->
-    <section id="projects" class="projects-section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-badge"><i class="fa-solid fa-folder-open"></i> Portfolio</span>
-          <h2 class="section-title">Featured Projects</h2>
-          <p class="section-desc">Practical applications and problem-solving concepts developed during my studies.</p>
-        </div>
+    <!-- ============================================================
+         4. PROJECTS SECTION
+         ============================================================ -->
+    <section id="projects" class="section">
+      <div class="section-container">
+        <div class="section-label reveal-up"><i class="fa-solid fa-folder-open"></i> Portfolio</div>
+        <h2 class="section-title reveal-up">Featured <span class="text-gradient">Projects</span></h2>
+        <p class="section-subtitle reveal-up">Practical applications and problem-solving concepts developed during my studies.</p>
 
         <div class="projects-grid">
+
           <!-- Project 1 -->
-          <article class="project-card glass-card reveal">
-            <div class="project-image-wrap">
-              <img src="assets/project1.jpg" alt="ScamShield AI Project Graphic" width="600" height="360" loading="lazy" />
-            </div>
-            <div class="project-body">
+          <article class="project-card reveal-up" data-tilt>
+            <div class="project-card-inner">
+              <div class="project-header">
+                <div class="project-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="project-num">01</div>
+              </div>
               <h3 class="project-title">ScamShield AI</h3>
               <p class="project-desc">
-                An intelligent multi-platform scam detection assistant designed to identify suspicious messages, links, and scam patterns using AI/ML techniques.
+                An intelligent multi-platform scam detection assistant designed to identify suspicious messages,
+                links, and scam patterns using AI/ML techniques.
               </p>
               <div class="project-techs">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">NLP</span>
-                <span class="tech-tag">Machine Learning</span>
-                <span class="tech-tag">Scikit-learn</span>
+                <span>Python</span><span>NLP</span><span>Machine Learning</span><span>Scikit-learn</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/pollasrujan0025" target="_blank" rel="noopener noreferrer" class="btn btn-outline" title="GitHub Repository">
+                <a href="https://github.com/pollasrujan0025" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-outline">
                   <i class="fa-brands fa-github"></i> Code
                 </a>
-                <a href="https://your-demo-placeholder.com/scamshield" target="_blank" rel="noopener noreferrer" class="btn btn-primary" title="Live Demo Placeholder">
-                  <i class="fa-solid fa-up-right-from-square"></i> Live Demo
+                <a href="#" class="proj-btn proj-btn-fill" title="Live Demo – Coming Soon">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
                 </a>
               </div>
             </div>
           </article>
 
           <!-- Project 2 -->
-          <article class="project-card glass-card reveal">
-            <div class="project-image-wrap">
-              <img src="assets/project2.jpg" alt="Millets Value Chain Platform Graphic" width="600" height="360" loading="lazy" />
-            </div>
-            <div class="project-body">
+          <article class="project-card reveal-up delay-1" data-tilt>
+            <div class="project-card-inner">
+              <div class="project-header">
+                <div class="project-icon accent-emerald"><i class="fa-solid fa-seedling"></i></div>
+                <div class="project-num">02</div>
+              </div>
               <h3 class="project-title">Millets Value Chain Platform</h3>
               <p class="project-desc">
-                An AI-enabled platform concept designed to connect farmers, buyers, and other stakeholders in the millet value chain.
+                An AI-enabled platform concept designed to connect farmers, buyers, and stakeholders
+                in the millet value chain.
               </p>
               <div class="project-techs">
-                <span class="tech-tag">AI Concept</span>
-                <span class="tech-tag">Data Analytics</span>
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Web Platform</span>
+                <span>Python</span><span>AI Concept</span><span>Data Analytics</span><span>Web Platform</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/pollasrujan0025" target="_blank" rel="noopener noreferrer" class="btn btn-outline" title="GitHub Repository">
+                <a href="https://github.com/pollasrujan0025" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-outline">
                   <i class="fa-brands fa-github"></i> Code
                 </a>
-                <a href="https://your-demo-placeholder.com/millets-platform" target="_blank" rel="noopener noreferrer" class="btn btn-primary" title="Live Demo Placeholder">
-                  <i class="fa-solid fa-up-right-from-square"></i> Live Demo
+                <a href="#" class="proj-btn proj-btn-fill" title="Live Demo – Coming Soon">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
                 </a>
               </div>
             </div>
           </article>
 
           <!-- Project 3 -->
-          <article class="project-card glass-card reveal">
-            <div class="project-image-wrap">
-              <img src="assets/project3.jpg" alt="AI-Driven Crop Type & Moisture Stress Detection Graphic" width="600" height="360" loading="lazy" />
-            </div>
-            <div class="project-body">
-              <h3 class="project-title">AI-Driven Crop Type &amp; Moisture Stress Detection</h3>
+          <article class="project-card reveal-up delay-2" data-tilt>
+            <div class="project-card-inner">
+              <div class="project-header">
+                <div class="project-icon accent-purple"><i class="fa-solid fa-satellite"></i></div>
+                <div class="project-num">03</div>
+              </div>
+              <h3 class="project-title">AI Crop &amp; Moisture Stress Detection</h3>
               <p class="project-desc">
-                An AI and remote-sensing based solution concept for crop classification, moisture stress detection, and irrigation advisory using multi-source satellite data.
+                An AI and remote-sensing based solution concept for crop classification, moisture stress
+                detection, and irrigation advisory using multi-source satellite data.
               </p>
               <div class="project-techs">
-                <span class="tech-tag">Remote Sensing</span>
-                <span class="tech-tag">OpenCV</span>
-                <span class="tech-tag">Machine Learning</span>
-                <span class="tech-tag">Satellite Analytics</span>
+                <span>OpenCV</span><span>Remote Sensing</span><span>Machine Learning</span><span>Satellite Data</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/pollasrujan0025" target="_blank" rel="noopener noreferrer" class="btn btn-outline" title="GitHub Repository">
+                <a href="https://github.com/pollasrujan0025" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-outline">
                   <i class="fa-brands fa-github"></i> Code
                 </a>
-                <a href="https://your-demo-placeholder.com/crop-moisture" target="_blank" rel="noopener noreferrer" class="btn btn-primary" title="Live Demo Placeholder">
-                  <i class="fa-solid fa-up-right-from-square"></i> Live Demo
+                <a href="#" class="proj-btn proj-btn-fill" title="Live Demo – Coming Soon">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
                 </a>
               </div>
             </div>
           </article>
+
         </div>
       </div>
     </section>
 
-    <!-- ==========================================
-         5. EDUCATION & 6. CERTIFICATIONS SECTION
-         ========================================== -->
-    <section id="education" class="edu-cert-section">
-      <div class="container">
-        <div class="edu-cert-grid">
-          <!-- Education Column -->
-          <div class="reveal">
-            <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
-              <span class="section-badge"><i class="fa-solid fa-graduation-cap"></i> Academics</span>
-              <h2 class="section-title">Education</h2>
-            </div>
+    <!-- ============================================================
+         5. EDUCATION SECTION
+         ============================================================ -->
+    <section id="education" class="section section-alt">
+      <div class="section-container">
+        <div class="section-label reveal-up"><i class="fa-solid fa-graduation-cap"></i> Academics</div>
+        <h2 class="section-title reveal-up">My <span class="text-gradient">Education</span></h2>
 
-            <div class="timeline-card glass-card">
-              <div class="timeline-header">
-                <div class="timeline-icon"><i class="fa-solid fa-university"></i></div>
-                <div>
-                  <h3 class="timeline-degree">B.Tech in Artificial Intelligence &amp; Data Science</h3>
-                  <p class="timeline-meta">Current Status: <strong>2nd Year Student</strong> • Graduation Year: <strong>2029</strong></p>
-                </div>
-              </div>
-              <ul class="timeline-details">
-                <li>Core studies focused on Data Structures, Algorithms, Statistics, and Database Management.</li>
-                <li>Hands-on laboratory experience with Python, Object-Oriented Programming, and Machine Learning algorithms.</li>
-                <li>Engaged in collaborative technical projects and problem-solving hackathons.</li>
+        <div class="edu-timeline reveal-up">
+          <div class="edu-line"></div>
+          <div class="edu-card">
+            <div class="edu-node">
+              <i class="fa-solid fa-university"></i>
+            </div>
+            <div class="edu-content glass-card">
+              <div class="edu-year-badge">2025 – 2029</div>
+              <h3 class="edu-degree">B.Tech in Artificial Intelligence &amp; Data Science</h3>
+              <p class="edu-status">
+                <span class="status-live"><span class="status-dot"></span>Currently 2nd Year</span>
+              </p>
+              <ul class="edu-details">
+                <li>Core focus on Data Structures, Algorithms, Statistics, and Database Management.</li>
+                <li>Hands-on experience with Python, Machine Learning, and OOP.</li>
+                <li>Engaged in collaborative AI projects and technical hackathons.</li>
               </ul>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Certifications Column -->
-          <div id="certifications" class="reveal">
-            <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
-              <span class="section-badge"><i class="fa-solid fa-award"></i> Credentials</span>
-              <h2 class="section-title">Certifications</h2>
-            </div>
+    <!-- ============================================================
+         6. CERTIFICATIONS SECTION
+         ============================================================ -->
+    <section id="certifications" class="section">
+      <div class="section-container">
+        <div class="section-label reveal-up"><i class="fa-solid fa-award"></i> Credentials</div>
+        <h2 class="section-title reveal-up">My <span class="text-gradient">Certifications</span></h2>
 
-            <div class="cert-card glass-card">
-              <div class="cert-badge-row" style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; flex-wrap: wrap;">
-                <div style="display: flex; align-items: center; gap: 0.6rem;">
-                  <span class="cert-platform" style="color: var(--accent-cyan); font-weight: 800; font-size: 1.3rem;">NPTEL</span>
-                  <span style="padding: 0.25rem 0.65rem; background: rgba(139, 92, 246, 0.15); border: 1px solid rgba(139, 92, 246, 0.3); color: var(--accent-purple); border-radius: 50px; font-weight: 700; font-size: 0.78rem;">
-                    <i class="fa-solid fa-award"></i> Elite Certification
-                  </span>
+        <div class="cert-showcase reveal-up">
+          <div class="cert-card-premium glass-card">
+
+            <div class="cert-glow-ring"></div>
+
+            <div class="cert-top-row">
+              <div class="cert-provider-block">
+                <div class="cert-logo-icon"><i class="fa-solid fa-certificate"></i></div>
+                <div>
+                  <div class="cert-provider-name">NPTEL</div>
+                  <div class="cert-provider-sub">IIT Kharagpur Initiative</div>
                 </div>
-                <span class="cert-score-pill" style="padding: 0.4rem 0.9rem; background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.3); color: var(--accent-emerald); border-radius: 8px; font-weight: 800; font-size: 1rem; font-family: var(--font-mono);">
-                  82% Score
-                </span>
               </div>
-
-              <h3 class="cert-title" style="font-size: 1.3rem; font-weight: 700; margin-top: 0.5rem;">NPTEL – Programming in Java</h3>
-              
-              <div style="font-size: 0.85rem; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 1rem; margin: 0.35rem 0;">
-                <span><i class="fa-regular fa-calendar" style="color: var(--accent-cyan);"></i> Jan-Apr 2026</span>
-                <span><i class="fa-regular fa-clock" style="color: var(--accent-cyan);"></i> 12 Week Course (4 Credits)</span>
+              <div class="cert-badges">
+                <span class="cert-elite-badge"><i class="fa-solid fa-medal"></i> Elite</span>
+                <span class="cert-score-badge">82%</span>
               </div>
+            </div>
 
-              <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">
-                Awarded <strong>Elite Certification</strong> by NPTEL for performance in Programming in Java.
-                <br>
-                <span style="font-size: 0.82rem; color: var(--text-dim);">Score Breakdown: Online Assignments (25/25) • Proctored Exam (57/75)</span>
-              </p>
+            <h3 class="cert-course-title">Programming in Java</h3>
 
-              <div class="cert-actions" style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.85rem;">
-                <a href="assets/nptel-java-certificate.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.55rem 1.1rem; font-size: 0.85rem;">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate
-                </a>
-                <a href="assets/nptel-java-certificate.pdf" download="NPTEL-Programming-in-Java-Certificate.pdf" class="btn btn-outline" style="padding: 0.55rem 1.1rem; font-size: 0.85rem;">
-                  <i class="fa-solid fa-download"></i> Download Certificate
-                </a>
+            <div class="cert-meta-row">
+              <span><i class="fa-regular fa-calendar"></i> Jan – Apr 2026</span>
+              <span><i class="fa-regular fa-clock"></i> 12 Weeks</span>
+              <span><i class="fa-solid fa-star"></i> 4 Credits</span>
+            </div>
+
+            <div class="cert-score-breakdown">
+              <div class="score-item">
+                <div class="score-label">Online Assignments</div>
+                <div class="score-bar-wrap">
+                  <div class="score-bar" style="--pct: 100%"></div>
+                </div>
+                <div class="score-val">25/25</div>
               </div>
+              <div class="score-item">
+                <div class="score-label">Proctored Exam</div>
+                <div class="score-bar-wrap">
+                  <div class="score-bar" style="--pct: 76%"></div>
+                </div>
+                <div class="score-val">57/75</div>
+              </div>
+            </div>
+
+            <div class="cert-actions">
+              <a href="assets/nptel-java-certificate.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary cert-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate
+              </a>
+              <a href="assets/nptel-java-certificate.pdf" download="NPTEL-Programming-in-Java-Certificate.pdf" class="btn-secondary cert-btn">
+                <i class="fa-solid fa-download"></i> Download
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==========================================
-         7. ACHIEVEMENTS / ACTIVITIES SECTION
-         ========================================== -->
-    <section id="achievements" class="achievements-section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-badge"><i class="fa-solid fa-trophy"></i> Engagement</span>
-          <h2 class="section-title">Achievements &amp; Activities</h2>
-          <p class="section-desc">Active participation in technical learning events, hackathons, and seminars.</p>
-        </div>
+    <!-- ============================================================
+         7. AI JOURNEY ROADMAP
+         ============================================================ -->
+    <section id="journey" class="section section-alt">
+      <div class="section-container">
+        <div class="section-label reveal-up"><i class="fa-solid fa-route"></i> Roadmap</div>
+        <h2 class="section-title reveal-up">My Journey Towards <span class="text-gradient">AI Engineering</span></h2>
+        <p class="section-subtitle reveal-up">A structured learning pathway from foundations to full-stack AI engineering.</p>
 
-        <div class="achievements-grid">
-          <!-- Card 1 -->
-          <div class="achievement-card glass-card reveal">
-            <div class="achievement-icon">💡</div>
-            <h3 class="achievement-title">Hackathons &amp; Ideathons</h3>
-            <p class="achievement-desc">
-              Participating in college and regional AI/technology hackathons to design rapid prototypes for real-world problems.
-            </p>
-          </div>
+        <div class="roadmap-flow" id="roadmapFlow">
 
-          <!-- Card 2 -->
-          <div class="achievement-card glass-card reveal">
-            <div class="achievement-icon">⚙️</div>
-            <h3 class="achievement-title">Technical Events</h3>
-            <p class="achievement-desc">
-              Active participant in department coding competitions, tech symposiums, and AI project exhibitions.
-            </p>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="achievement-card glass-card reveal">
-            <div class="achievement-icon">🎓</div>
-            <h3 class="achievement-title">Workshops &amp; Seminars</h3>
-            <p class="achievement-desc">
-              Attended hands-on technical workshops covering machine learning models, cloud computing fundamentals, and Python automation.
-            </p>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="achievement-card glass-card reveal">
-            <div class="achievement-icon">🌟</div>
-            <h3 class="achievement-title">Academic Milestones</h3>
-            <p class="achievement-desc">
-              Consistently maintaining strong academic standing in Artificial Intelligence and Data Science coursework.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================
-         8. AI ENGINEER JOURNEY ROADMAP
-         ========================================== -->
-    <section id="journey" class="roadmap-section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-badge"><i class="fa-solid fa-route"></i> Roadmap</span>
-          <h2 class="section-title">My Journey Towards AI Engineering</h2>
-          <p class="section-desc">A structured learning pathway tracing my progression from foundational programming to advanced AI engineering.</p>
-        </div>
-
-        <div class="roadmap-container">
-          <!-- Step 1 -->
-          <div class="roadmap-step completed reveal">
-            <div class="roadmap-node"></div>
-            <div class="roadmap-content glass-card">
-              <div class="roadmap-header-line">
-                <h3 class="roadmap-title">1. Python</h3>
-                <span class="roadmap-status-badge status-done">Completed</span>
-              </div>
-              <p class="roadmap-desc">Core syntax, data structures, OOP principles, and scripting essentials.</p>
+          <div class="roadmap-item completed reveal-up">
+            <div class="rm-node"><i class="fa-solid fa-check"></i></div>
+            <div class="rm-card glass-card">
+              <span class="rm-badge rm-done">Completed</span>
+              <h3 class="rm-title">Python</h3>
+              <p class="rm-desc">Core syntax, data structures, OOP, scripting essentials.</p>
             </div>
           </div>
 
-          <!-- Step 2 -->
-          <div class="roadmap-step completed reveal">
-            <div class="roadmap-node"></div>
-            <div class="roadmap-content glass-card">
-              <div class="roadmap-header-line">
-                <h3 class="roadmap-title">2. Mathematics &amp; Statistics</h3>
-                <span class="roadmap-status-badge status-done">Completed</span>
-              </div>
-              <p class="roadmap-desc">Linear algebra, calculus, probability distributions, and statistical inference.</p>
+          <div class="roadmap-item completed reveal-up delay-1">
+            <div class="rm-node"><i class="fa-solid fa-check"></i></div>
+            <div class="rm-card glass-card">
+              <span class="rm-badge rm-done">Completed</span>
+              <h3 class="rm-title">Mathematics &amp; Statistics</h3>
+              <p class="rm-desc">Linear algebra, calculus, probability, statistical inference.</p>
             </div>
           </div>
 
-          <!-- Step 3 -->
-          <div class="roadmap-step in-progress reveal">
-            <div class="roadmap-node"></div>
-            <div class="roadmap-content glass-card">
-              <div class="roadmap-header-line">
-                <h3 class="roadmap-title">3. Data Structures &amp; Algorithms</h3>
-                <span class="roadmap-status-badge status-active">In Progress</span>
-              </div>
-              <p class="roadmap-desc">Arrays, linked lists, trees, graphs, sorting, searching, and algorithmic complexity.</p>
+          <div class="roadmap-item active reveal-up delay-2">
+            <div class="rm-node rm-active-node"><i class="fa-solid fa-spinner"></i></div>
+            <div class="rm-card glass-card">
+              <span class="rm-badge rm-active">In Progress</span>
+              <h3 class="rm-title">Data Structures &amp; Algorithms</h3>
+              <p class="rm-desc">Arrays, trees, graphs, sorting, algorithmic complexity.</p>
             </div>
           </div>
 
-          <!-- Step 4 -->
-          <div class="roadmap-step in-progress reveal">
-            <div class="roadmap-node"></div>
-            <div class="roadmap-content glass-card">
-              <div class="roadmap-header-line">
-                <h3 class="roadmap-title">4. Machine Learning</h3>
-                <span class="roadmap-status-badge status-active">In Progress</span>
-              </div>
-              <p class="roadmap-desc">Supervised &amp; unsupervised learning, regression, classification, and Scikit-learn.</p>
+          <div class="roadmap-item active reveal-up delay-3">
+            <div class="rm-node rm-active-node"><i class="fa-solid fa-spinner"></i></div>
+            <div class="rm-card glass-card">
+              <span class="rm-badge rm-active">In Progress</span>
+              <h3 class="rm-title">Machine Learning</h3>
+              <p class="rm-desc">Supervised &amp; unsupervised learning, regression, classification, Scikit-learn.</p>
             </div>
           </div>
 
-          <!-- Step 5 -->
-          <div class="roadmap-step upcoming reveal">
-            <div class="roadmap-node"></div>
-            <div class="roadmap-content glass-card">
-              <div class="roadmap-header-line">
-                <h3 class="roadmap-title">5. Deep Learning</h3>
-                <span class="roadmap-status-badge status-next">Upcoming</span>
-              </div>
-              <p class="roadmap-desc">Neural network architectures, backpropagation, activation functions, and frameworks.</p>
+          <div class="roadmap-item reveal-up delay-4">
+            <div class="rm-node rm-upcoming-node"></div>
+            <div class="rm-card glass-card">
+              <span class="rm-badge rm-upcoming">Upcoming</span>
+              <h3 class="rm-title">Deep Learning</h3>
+              <p class="rm-desc">Neural networks, backpropagation, CNNs, RNNs, frameworks.</p>
             </div>
           </div>
 
-          <!-- Step 6 -->
-          <div class="roadmap-step upcoming reveal">
-            <div class="roadmap-node"></div>
-            <div class="roadmap-content glass-card">
-              <div class="roadmap-header-line">
-                <h3 class="roadmap-title">6. Computer Vision</h3>
-                <span class="roadmap-status-badge status-next">Upcoming</span>
-              </div>
-              <p class="roadmap-desc">Image processing with OpenCV, CNNs, object detection, and segmentation.</p>
+          <div class="roadmap-item reveal-up delay-5">
+            <div class="rm-node rm-upcoming-node"></div>
+            <div class="rm-card glass-card">
+              <span class="rm-badge rm-upcoming">Upcoming</span>
+              <h3 class="rm-title">Computer Vision</h3>
+              <p class="rm-desc">Image processing with OpenCV, CNNs, object detection, segmentation.</p>
             </div>
           </div>
 
-          <!-- Step 7 -->
-          <div class="roadmap-step upcoming reveal">
-            <div class="roadmap-node"></div>
-            <div class="roadmap-content glass-card">
-              <div class="roadmap-header-line">
-                <h3 class="roadmap-title">7. Natural Language Processing (NLP)</h3>
-                <span class="roadmap-status-badge status-next">Upcoming</span>
-              </div>
-              <p class="roadmap-desc">Text preprocessing, tokenization, embeddings, RNNs, and transformer models.</p>
+          <div class="roadmap-item reveal-up">
+            <div class="rm-node rm-upcoming-node"></div>
+            <div class="rm-card glass-card">
+              <span class="rm-badge rm-upcoming">Upcoming</span>
+              <h3 class="rm-title">NLP</h3>
+              <p class="rm-desc">Text preprocessing, tokenization, embeddings, transformers.</p>
             </div>
           </div>
 
-          <!-- Step 8 -->
-          <div class="roadmap-step upcoming reveal">
-            <div class="roadmap-node"></div>
-            <div class="roadmap-content glass-card">
-              <div class="roadmap-header-line">
-                <h3 class="roadmap-title">8. Generative AI</h3>
-                <span class="roadmap-status-badge status-next">Upcoming</span>
-              </div>
-              <p class="roadmap-desc">Large Language Models (LLMs), RAG architectures, prompt engineering, and fine-tuning.</p>
+          <div class="roadmap-item reveal-up delay-1">
+            <div class="rm-node rm-upcoming-node"></div>
+            <div class="rm-card glass-card">
+              <span class="rm-badge rm-upcoming">Upcoming</span>
+              <h3 class="rm-title">Generative AI</h3>
+              <p class="rm-desc">LLMs, RAG, prompt engineering, fine-tuning.</p>
             </div>
           </div>
 
-          <!-- Step 9 -->
-          <div class="roadmap-step upcoming reveal">
-            <div class="roadmap-node"></div>
-            <div class="roadmap-content glass-card">
-              <div class="roadmap-header-line">
-                <h3 class="roadmap-title">9. MLOps</h3>
-                <span class="roadmap-status-badge status-next">Upcoming</span>
-              </div>
-              <p class="roadmap-desc">Model deployment, API serving, pipeline monitoring, and CI/CD for AI systems.</p>
+          <div class="roadmap-item reveal-up delay-2">
+            <div class="rm-node rm-upcoming-node"></div>
+            <div class="rm-card glass-card">
+              <span class="rm-badge rm-upcoming">Upcoming</span>
+              <h3 class="rm-title">MLOps</h3>
+              <p class="rm-desc">Model deployment, API serving, pipeline monitoring, CI/CD for AI.</p>
             </div>
           </div>
 
-          <!-- Step 10 -->
-          <div class="roadmap-step upcoming reveal">
-            <div class="roadmap-node"></div>
-            <div class="roadmap-content glass-card">
-              <div class="roadmap-header-line">
-                <h3 class="roadmap-title">10. AI Engineering</h3>
-                <span class="roadmap-status-badge status-next">Ultimate Goal</span>
-              </div>
-              <p class="roadmap-desc">Building scalable, ethical, and high-impact AI production systems.</p>
+          <div class="roadmap-item goal reveal-up delay-3">
+            <div class="rm-node rm-goal-node"><i class="fa-solid fa-star"></i></div>
+            <div class="rm-card glass-card rm-goal-card">
+              <span class="rm-badge rm-goal">Ultimate Goal</span>
+              <h3 class="rm-title">AI Engineering</h3>
+              <p class="rm-desc">Building scalable, ethical, and high-impact AI production systems.</p>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- ==========================================
-         9. RESUME & 10. CONTACT SECTION
-         ========================================== -->
-    <section id="contact" class="contact-section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-badge"><i class="fa-solid fa-paper-plane"></i> Get In Touch</span>
-          <h2 class="section-title">Contact &amp; Resume</h2>
-          <p class="section-desc">Feel free to reach out for opportunities, collaborations, or inquiries.</p>
-        </div>
+    <!-- ============================================================
+         8. CONTACT SECTION
+         ============================================================ -->
+    <section id="contact" class="section">
+      <div class="section-container">
+        <div class="section-label reveal-up"><i class="fa-solid fa-paper-plane"></i> Get In Touch</div>
+        <h2 class="section-title reveal-up">Let's <span class="text-gradient">Connect</span></h2>
+        <p class="section-subtitle reveal-up">Open to opportunities, collaborations, and conversations about AI &amp; technology.</p>
 
         <div class="contact-grid">
-          <!-- Left Column: Info & Resume -->
-          <div class="contact-info reveal">
-            <div class="contact-card glass-card">
-              <div class="contact-card-icon"><i class="fa-solid fa-user-check"></i></div>
-              <div class="contact-card-detail">
-                <h4>Name</h4>
-                <p>Polla Srujan Kumar</p>
-              </div>
-            </div>
 
-            <div class="contact-card glass-card">
-              <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
-              <div class="contact-card-detail">
-                <h4>Email</h4>
-                <p><a href="mailto:pollasrujan0025@gmail.com">pollasrujan0025@gmail.com</a></p>
+          <!-- Left: Info -->
+          <div class="contact-info reveal-up">
+            <a href="mailto:pollasrujan0025@gmail.com" class="contact-info-card glass-card">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <div class="contact-info-label">Email</div>
+                <div class="contact-info-value">pollasrujan0025@gmail.com</div>
               </div>
-            </div>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+            </a>
 
-            <div class="contact-card glass-card">
-              <div class="contact-card-icon"><i class="fa-brands fa-linkedin-in"></i></div>
-              <div class="contact-card-detail">
-                <h4>LinkedIn</h4>
-                <p><a href="https://www.linkedin.com/in/polla-srujan-kumar-568b89382" target="_blank" rel="noopener noreferrer">polla-srujan-kumar-568b89382</a></p>
+            <a href="https://www.linkedin.com/in/polla-srujan-kumar-568b89382" target="_blank" rel="noopener noreferrer" class="contact-info-card glass-card">
+              <div class="contact-icon contact-icon-linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div>
+                <div class="contact-info-label">LinkedIn</div>
+                <div class="contact-info-value">polla-srujan-kumar</div>
               </div>
-            </div>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+            </a>
 
-            <div class="contact-card glass-card">
-              <div class="contact-card-icon"><i class="fa-brands fa-github"></i></div>
-              <div class="contact-card-detail">
-                <h4>GitHub</h4>
-                <p><a href="https://github.com/pollasrujan0025" target="_blank" rel="noopener noreferrer">github.com/pollasrujan0025</a></p>
+            <a href="https://github.com/pollasrujan0025" target="_blank" rel="noopener noreferrer" class="contact-info-card glass-card">
+              <div class="contact-icon contact-icon-github"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <div class="contact-info-label">GitHub</div>
+                <div class="contact-info-value">pollasrujan0025</div>
               </div>
-            </div>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+            </a>
 
-            <!-- Resume Download Box -->
-            <div class="resume-cta-banner">
-              <h3>Curriculum Vitae</h3>
-              <p>Download or view my latest resume for educational details, project summaries, and background.</p>
-              <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-top: 1.25rem;">
-                <a href="assets/resume.pdf" download="Polla-Srujan-Kumar-Resume.pdf" class="btn btn-primary">
-                  <i class="fa-solid fa-download"></i> Download Resume
+            <div class="resume-download-card glass-card">
+              <h4>Curriculum Vitae</h4>
+              <p>Download or view my latest resume.</p>
+              <div class="resume-btns">
+                <a href="assets/resume.pdf" download="Polla-Srujan-Kumar-Resume.pdf" class="btn-primary">
+                  <i class="fa-solid fa-download"></i> Download
                 </a>
-                <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                  <i class="fa-solid fa-eye"></i> View Resume
+                <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                  <i class="fa-solid fa-eye"></i> View
                 </a>
               </div>
             </div>
           </div>
 
-          <!-- Right Column: Interactive Form -->
-          <div class="contact-form-card glass-card reveal">
-            <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem;">
-              <i class="fa-regular fa-paper-plane text-gradient"></i> Send a Message
-            </h3>
-            
-            <form id="contactForm">
+          <!-- Right: Form -->
+          <div class="contact-form-wrap glass-card reveal-right">
+            <h3 class="form-title"><i class="fa-regular fa-paper-plane"></i> Send a Message</h3>
+            <form id="contactForm" novalidate>
               <div class="form-group">
-                <label for="formName" class="form-label">Your Name</label>
-                <input type="text" id="formName" class="form-input" placeholder="e.g. John Doe" required />
+                <label for="formName">Your Name</label>
+                <input type="text" id="formName" name="name" placeholder="e.g. John Doe" required />
               </div>
-
               <div class="form-group">
-                <label for="formEmail" class="form-label">Your Email</label>
-                <input type="email" id="formEmail" class="form-input" placeholder="e.g. john@example.com" required />
+                <label for="formEmail">Your Email</label>
+                <input type="email" id="formEmail" name="email" placeholder="e.g. john@example.com" required />
               </div>
-
               <div class="form-group">
-                <label for="formMessage" class="form-label">Message</label>
-                <textarea id="formMessage" class="form-textarea" placeholder="Type your message here..." required></textarea>
+                <label for="formMessage">Message</label>
+                <textarea id="formMessage" name="message" placeholder="What's on your mind?" required></textarea>
               </div>
-
-              <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <button type="submit" class="btn-primary form-submit">
                 <i class="fa-solid fa-paper-plane"></i> Send Message
               </button>
-
-              <div id="formStatus" class="form-status-msg"></div>
+              <div id="formStatus" class="form-status"></div>
             </form>
           </div>
+
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ==========================================
-       11. FOOTER
-       ========================================== -->
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
   <footer class="footer">
-    <div class="container footer-container">
+    <div class="footer-inner">
       <div class="footer-brand">
-        <h3>Polla Srujan Kumar</h3>
-        <p>AI Engineer in the Making • B.Tech AI &amp; DS Student</p>
+        <a href="#hero" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>Srujan<span class="logo-dot">.AI</span><span class="logo-bracket">/&gt;</span>
+        </a>
+        <p>Polla Srujan Kumar</p>
+        <p class="footer-tagline">AI Engineer in the Making</p>
       </div>
 
       <div class="footer-socials">
-        <a href="mailto:pollasrujan0025@gmail.com" class="social-icon" aria-label="Send Email" title="Send Email"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/polla-srujan-kumar-568b89382" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile" title="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://github.com/pollasrujan0025" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile" title="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:pollasrujan0025@gmail.com" class="social-btn" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/polla-srujan-kumar-568b89382" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/pollasrujan0025" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
       </div>
 
       <div class="footer-copy">
@@ -773,11 +728,7 @@
     </div>
   </footer>
 
-  <!-- Custom Script -->
   <script src="script.js"></script>
-  <script>
-    // Update copyright year dynamically
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
 </body>
 </html>
