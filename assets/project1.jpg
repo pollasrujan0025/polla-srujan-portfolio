@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360">
+  <defs>
+    <linearGradient id="p1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="16" fill="url(#p1Grad)" />
+  <path d="M0 60 H600 M0 120 H600 M0 180 H600 M0 240 H600 M0 300 H600" stroke="rgba(255,255,255,0.03)" stroke-width="1" />
+  <g transform="translate(230, 70)">
+    <path d="M70 10 L130 35 V100 C130 150 70 185 70 185 C70 185 10 150 10 100 V35 Z" fill="url(#shieldGrad)" opacity="0.2" stroke="url(#shieldGrad)" stroke-width="3" />
+    <path d="M70 25 L118 45 V98 C118 138 70 166 70 166 C70 166 22 138 22 98 V45 Z" fill="none" stroke="#38bdf8" stroke-width="2" />
+    <circle cx="70" cy="85" r="16" fill="#38bdf8" />
+    <path d="M70 101 V125 M55 113 H85" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" />
+  </g>
+  <rect x="0" y="280" width="600" height="80" fill="rgba(15, 23, 42, 0.85)" />
+  <text x="30" y="315" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="20" font-weight="700">ScamShield AI</text>
+  <text x="30" y="340" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Multi-Platform Scam Detection &amp; Threat Assistant</text>
+</svg>

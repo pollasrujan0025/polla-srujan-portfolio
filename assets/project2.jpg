@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360">
+  <defs>
+    <linearGradient id="p2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#14532d" />
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="16" fill="url(#p2Grad)" />
+  <g transform="translate(100, 110)">
+    <circle cx="50" cy="50" r="30" fill="url(#leafGrad)" />
+    <text x="50" y="55" fill="#064e3b" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">🌾</text>
+    <line x1="80" y1="50" x2="170" y2="50" stroke="#34d399" stroke-width="3" stroke-dasharray="6 4" />
+    <circle cx="200" cy="50" r="36" fill="#0f172a" stroke="#34d399" stroke-width="3" />
+    <text x="200" y="56" fill="#34d399" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">AI</text>
+    <line x1="236" y1="50" x2="320" y2="50" stroke="#34d399" stroke-width="3" stroke-dasharray="6 4" />
+    <circle cx="350" cy="50" r="30" fill="url(#leafGrad)" />
+    <text x="350" y="55" fill="#064e3b" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">🏪</text>
+  </g>
+  <rect x="0" y="280" width="600" height="80" fill="rgba(15, 23, 42, 0.85)" />
+  <text x="30" y="315" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="20" font-weight="700">Millets Value Chain Platform</text>
+  <text x="30" y="340" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">AI-Enabled Stakeholder Connection &amp; Market Ecosystem</text>
+</svg>
